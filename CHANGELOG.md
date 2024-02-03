@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Fix sample code in documentation.
+
 ## 1.0.1
 
 - Provide an example as required by https://dart.dev/tools/pub/package-layout#examples.

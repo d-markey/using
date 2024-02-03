@@ -18,13 +18,14 @@ class Resource with Releasable {
 }
 
 void main() {
+  Resource? res;
   try {
-    final res = Resource(); // allocate
+    res = Resource(); // allocate
     // use resource
   } finally {
     // release in a finally block to ensure resources are released
     // even when an error occurs
-    res.release();
+    res?.release();
   }
 }
 ```

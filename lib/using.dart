@@ -15,11 +15,12 @@
 /// }
 ///
 /// void main() {
+///   Resource? res;
 ///   try {
-///     final res = Resource(); // allocate
+///     res = Resource(); // allocate
 ///     // use resource
 ///   } finally {
-///     res.release(); // release
+///     res?.release(); // release
 ///   }
 /// }
 /// ```
