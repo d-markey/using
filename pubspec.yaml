@@ -1,0 +1,14 @@
+name: using
+description: This package provides a `Releasable` mixin to upgrade any class with automatic cleanup and finalization features, similar to C#'s `IDisposable` and Java's `AutoCloseable`. Extension methods enhance the development experience with constructs close to `using` in C# and `try-with-resource` in Java.
+version: 1.0.1
+repository: https://github.com/d-markey/using
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  meta: ^1.11.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
