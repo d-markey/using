@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Shorten package description.
+
 ## 1.0.2
 
 - Fix sample code in documentation.
