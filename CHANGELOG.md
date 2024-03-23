@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Use meta version ^1.10.0 for compatibility with Flutter.
+
 ## 1.0.3
 
 - Shorten package description.

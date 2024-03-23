@@ -1,13 +1,13 @@
 name: using
 description: Upgrade your class with automatic cleanup and finalization, similar to "using + IDisposable" in C# and "try-with-resource + AutoCloseable" in Java.
-version: 1.0.3
+version: 1.0.4
 repository: https://github.com/d-markey/using
 
 environment:
   sdk: ^3.0.0
 
 dependencies:
-  meta: ^1.11.0
+  meta: ^1.10.0
 
 dev_dependencies:
   lints: ^3.0.0
