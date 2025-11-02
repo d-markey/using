@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Fix [pub.dev](https://pub.dev/packages/using) issues.
+
 ## 1.0.4
 
 - Use meta version ^1.10.0 for compatibility with Flutter.

@@ -11,7 +11,7 @@ mixin Releasable {
   /// Implementations should call this method e.g. at construction time to make
   /// sure they will be trackable in debugging scenarios. See [ReleasableTracker.enable]
   /// for more information.
-  track() {
+  void track() {
     ReleasableTracker.startTracking(this);
   }
 

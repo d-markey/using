@@ -8,7 +8,7 @@ class ReleasableTracker {
 
   /// `true` if tracking of [Releasable] objects is enabled, `false` otherwise.
   /// By default, tracking is disabled.
-  static get isEnabled => _enabled;
+  static bool get isEnabled => _enabled;
 
   /// Enables tracking of [Releasable] objects. Please note that enabling
   /// tracking may result in increased memory usage as Dart's GC will not be
@@ -34,23 +34,21 @@ class ReleasableTracker {
   /// releasable objects have been released.
   static Iterable<Releasable> get releasables => _releasables.map(_self);
 
-  @internal
-
   /// Start tracking a [Releasable] object.
+  @internal
   static void startTracking(Releasable instance) {
     if (_enabled) {
       _releasables.add(instance);
     }
   }
 
-  @internal
-
   /// Stop tracking a [Releasable] object. This method is called by
   /// [Releasable.release] and `release()` methods of releasable objects
   /// should make sure they always call `super.release()`.
+  @internal
   static void stopTracking(Releasable instance) {
     _releasables.remove(instance);
   }
 }
 
-T _self<T>(T instance) => instance;
+Releasable _self(Releasable instance) => instance;
